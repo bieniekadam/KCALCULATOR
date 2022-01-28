@@ -1,38 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    1200deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(25, 25, 169, 1) 43%,
+    rgb(187, 8, 203) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.hey-message {
+  margin-top: 10%;
   color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 120px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  animation-name: example;
+  animation-duration: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes example {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 60px;
+  }
+  10% {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 75px;
+  }
+  20% {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 80px;
+  }
+  30% {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 85px;
+  }
+  40% {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 90px;
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 95px;
+  }
+  60% {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 100px;
+  }
+  70% {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 105px;
+  }
+  80% {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 110px;
+  }
+  90% {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 115px;
+  }
+  100% {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 120px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-logo {
+  height: 50px;
+}
+
+.lets-count-message {
+  color: rgb(255, 255, 255);
+  margin-top: -70px;
+}
+
+.lets-count-message > .search-bar:focus {
+  color: aqua;
 }

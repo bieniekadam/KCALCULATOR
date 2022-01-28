@@ -1,0 +1,26 @@
+.search-bar {
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.search-bar:hover {
+  width: 430px;
+  height: 40px;
+  transition: 0.1s;
+  box-shadow: rgb(197, 133, 230) 0px 0px 17px;
+}
+
+.search-bar:focus {
+  width: 430px;
+  height: 40px;
+  background-color: white;
+  transition: 0.3s;
+  box-shadow: rgb(226, 168, 255) 0px 0px 37px;
+  margin-top: -45px;
+}
